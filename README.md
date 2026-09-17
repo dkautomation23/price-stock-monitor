@@ -1,5 +1,7 @@
 # price-stock-monitor
 
+[![CI](https://github.com/dkautomation23/price-stock-monitor/actions/workflows/ci.yml/badge.svg)](https://github.com/dkautomation23/price-stock-monitor/actions/workflows/ci.yml)
+
 Watch product pages for **price changes and stock changes**, keep a full history,
 and get alerted the moment something moves — a single, dependency-light Python CLI.
 
