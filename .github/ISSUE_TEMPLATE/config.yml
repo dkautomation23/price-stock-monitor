@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question, or paid work
+    url: mailto:hello@dkautomation.dev
+    about: Anything that is not a bug report or a feature request
+  - name: Security report
+    url: https://github.com/dkautomation23/price-stock-monitor/blob/main/SECURITY.md
+    about: Report a vulnerability privately, never in a public issue
