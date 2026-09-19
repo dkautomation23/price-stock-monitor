@@ -1,0 +1,49 @@
+name: Bug report
+description: Something behaves differently from what the README says
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not paste tokens, keys, or a real `webhook_url`. Replace them with
+        placeholders if the shape matters.
+
+        Found a security hole instead? Do not use this form — see SECURITY.md.
+  - type: input
+    id: python-version
+    attributes:
+      label: Python version
+      placeholder: "3.10 or 3.12 (CI's tested versions)"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "Windows 11 / Ubuntu 22.04 / macOS 14"
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Exact command
+      description: Include flags, e.g. `python monitor.py --config products.yaml --once`
+      render: console
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: Input data
+      description: >-
+        The relevant part of products.yaml (remove webhook_url) and, if
+        possible, a trimmed sample of the page HTML around the price/stock
+        selector.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and what happened instead
+    validations:
+      required: true
